@@ -1,6 +1,6 @@
 .paperC {
     width          : 30vw;
-    height         : 30vw;
+    height         : 40vw;
     align-items    : center;
     display        : flex;
     justify-content: space-evenly;
@@ -16,9 +16,9 @@
 }
 
 .textFieldUC {
-    width: 70%;
+    width: 60%;
 }
 
 .textFieldPC {
-    width: 70%;
+    width: 60%;
 }

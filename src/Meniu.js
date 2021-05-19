@@ -10,7 +10,7 @@ function Meniu() {
         <>
             <div className='meniuC'>
                 <Paper elevation='6' className='paperC'>
-                    <div className='headerC'>Menu</div>
+                    <h2 className='headerC'>LOG IN</h2>
                     <TextField label='Username' className='textFieldUC'>
 
                     </TextField>
@@ -21,7 +21,8 @@ function Meniu() {
                     <TextField label='Repeat Password' className='textFieldPC'>
 
                     </TextField>
-                    <Button>
+                    <Button disableRipple='true'>Register</Button>
+                    <Button disableRipple='true'>
                         Submit
                     </Button>
                 </Paper>
