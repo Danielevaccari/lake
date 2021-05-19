@@ -1,0 +1,24 @@
+.paperC {
+    width          : 30vw;
+    height         : 30vw;
+    align-items    : center;
+    display        : flex;
+    justify-content: space-evenly;
+    flex-direction : column;
+}
+
+.divC {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    height         : 50vw;
+    width          : 100%;
+}
+
+.textFieldUC {
+    width: 70%;
+}
+
+.textFieldPC {
+    width: 70%;
+}
