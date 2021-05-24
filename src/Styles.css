@@ -1,24 +1,45 @@
-.paperC {
-    width          : 30vw;
-    height         : 40vw;
-    align-items    : center;
-    display        : flex;
-    justify-content: space-evenly;
-    flex-direction : column;
-}
-
 .divC {
     display        : flex;
     justify-content: center;
     align-items    : center;
-    height         : 50vw;
-    width          : 100%;
+    height         : 100vh;
+    width          : 100vw;
 }
 
-.textFieldUC {
+.paperC {
+    height         : 100%;
+    width          : 90%;
+    align-items    : center;
+    display        : flex;
+    justify-content: space-evenly;
+    flex-direction : column;
+    background-image: url(./forest3.jpeg)
+
+}
+
+.div1C {
+    height: 65%;
+    width : 35%;
+}
+
+.textField {
     width: 60%;
 }
 
-.textFieldPC {
-    width: 60%;
+.headerC{
+    font-size: 3vw;
+}
+
+.createPC {
+    height: 100%;
+    width : 90%;
+
+}
+.createBC{
+    display        : flex;
+    justify-content: left;
+}
+
+.selectC{
+    width:100px;
 }
