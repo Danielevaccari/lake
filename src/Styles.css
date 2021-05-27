@@ -1,20 +1,22 @@
 .divC {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    height         : 100vh;
-    width          : 100vw;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    height          : 100vh;
+    width           : 100vw;
+    background-size: 100vw 100vh;
+    background-image: url(./ice2.jpeg);
 }
 
 .paperC {
-    height         : 100%;
-    width          : 90%;
-    align-items    : center;
-    display        : flex;
-    justify-content: space-evenly;
-    flex-direction : column;
-    background-image: url(./forest3.jpeg)
-
+    height          : 100%;
+    width           : 90%;
+    align-items     : center;
+    display         : flex;
+    justify-content : space-evenly;
+    flex-direction  : column;
+    background-size :32vw 65vh;
+    background-image: url(./ice4.jpeg)
 }
 
 .div1C {
@@ -26,8 +28,8 @@
     width: 60%;
 }
 
-.headerC{
-    font-size: 3vw;
+.headerC {
+    font-size: 2vw;
 }
 
 .createPC {
@@ -35,11 +37,12 @@
     width : 90%;
 
 }
-.createBC{
+
+.createBC {
     display        : flex;
     justify-content: left;
 }
 
-.selectC{
-    width:100px;
+.selectC {
+    width: 100px;
 }
