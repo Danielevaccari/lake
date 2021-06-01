@@ -4,7 +4,6 @@ import TextField from '@material-ui/core/TextField';
 import Paper from '@material-ui/core/Paper';
 import Select from '@material-ui/core/Select'
 import { FormControl, InputLabel } from '@material-ui/core';
-import forest from './forest.jpeg'
 
 const Create = (props) => {
 
@@ -26,7 +25,7 @@ const Create = (props) => {
             <div className='divC'>
             
                 <div className='div1C'>
-                    <Paper elevation={6} className='paperC' style={{backgroundImage: forest}}>
+                    <Paper elevation={6} className='paperC'>
                         <h2 className='headerC'>Create account</h2>
 
                         <TextField className='textField' label='Insert username'>

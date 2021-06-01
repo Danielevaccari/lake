@@ -12,7 +12,9 @@ function Meniu() {
     const [password, setPassword] = useState('')
     const [ca, setCa] = useState(false)
 
-
+    const changeCa = () => {
+      setCa(prevCa => !prevCa)
+    }
     //Handlers for user input
     const handleUsername = (event) => {
         setUsername(event.target.value)
@@ -20,13 +22,10 @@ function Meniu() {
     const handlePassword = (event) => {
         setPassword(event.target.value)
     }
-    const changeCa = () => {
-        setCa(prevCa => !prevCa)
-    }
 
     return (
         <>
-            {!ca &&
+            {/*add ! to make normal*/ ca &&
                 <div className='divC'>
                     <div className='div1C'>
                         <Paper elevation={6} className='paperC'>
@@ -42,7 +41,7 @@ function Meniu() {
                             <Button onClick={changeCa} disableRipple={true}>Register</Button>
                             <Button disableRipple={true}>
                                 Submit
-                    </Button>
+                            </Button>
                             <div>{username}</div>
                         </Paper>
                     </div>
