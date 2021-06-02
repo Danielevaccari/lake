@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 body {
     margin : 0;
     padding: 0;
@@ -14,18 +17,38 @@ body {
 
 .left {
     margin-left: 2%;
-    flex     : 50%;
-    font-size: 3vh;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    flex       : 50%;
+    font-size  : 3vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .right {
     flex: 50%;
 }
-.links{
-    display: flex;
-    justify-content:space-around
+
+.links {
+    display        : flex;
+    justify-content: space-around;
+    font-size      : 1vw;
 }
-.link{
+
+.link {
     text-decoration: none;
+    color          : black;
+    font-family    : 'Press Start 2P', cursive;
+}
+
+.categories {
+    height          : 5%;
+    width           : 100%;
+    background-color: antiquewhite;
+}
+
+.category {
+    height         : 100%;
+    display        : flex;
+    justify-content: space-evenly;
+    align-items    : center;
+    margin-left    : 30%;
+    margin-right   : 30%;
 }
