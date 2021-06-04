@@ -16,10 +16,25 @@ body {
 }
 
 .left {
-    margin-left: 2%;
-    flex       : 50%;
-    font-size  : 3vh;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    padding-left   : 2%;
+    flex           : 15%;
+    font-size      : 3vh;
+    font-family    : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.middle {
+    flex       : 30%;
+    display    : flex;
+    align-items: center;
+}
+
+.searchInput {
+    height: 3vh;
+    width : 12vw;
+    border: none;
 }
 
 .right {
@@ -51,4 +66,5 @@ body {
     align-items    : center;
     margin-left    : 30%;
     margin-right   : 30%;
+    font-size      : 1vw;
 }

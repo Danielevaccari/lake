@@ -1,4 +1,5 @@
 import React from 'react'
+import paita2 from './paita2.png'
 
 function Navbar() {
     return (
@@ -6,6 +7,10 @@ function Navbar() {
             <div className='nav'>
                 <div className='left'>
                     Clothing INC
+                </div>
+
+                <div className='middle'>
+                    <input className='searchInput' placeholder='Search...'></input>
                 </div>
 
                 <div className='right'>
