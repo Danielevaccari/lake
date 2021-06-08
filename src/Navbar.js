@@ -39,7 +39,7 @@ function Navbar() {
                 <div className='right'>
                     <div className='links'>
                         <input className='searchInput' placeholder='Search...'></input>
-                        <a className='link' href='/#'><Badge badgeContent={itemCount} color='primary'><ShoppingCartIcon style={{ color: 'white'}}/></Badge></a>
+                        <a className='link' href='/#'><Badge badgeContent={itemCount} color='primary'><ShoppingCartIcon onClick={increaseItemCount} style={{ color: 'white'}}/></Badge></a>
                         <a className='link' href='/#'><AccountBoxSharpIcon style={{ color: 'white' }} /></a>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Clothes from './Clothes'
+import Products from './Products/Products'
 
 function webpage() {
     return (
@@ -9,7 +9,7 @@ function webpage() {
                 <Navbar />
             </div>
             <div className='web2'>
-                <Clothes />
+                <Products />
             </div>
         </>
     )
