@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/lake/static/css/main.bbf7fbba.chunk.css",
-    "main.js": "/lake/static/js/main.f954fa3d.chunk.js",
-    "main.js.map": "/lake/static/js/main.f954fa3d.chunk.js.map",
+    "main.css": "/lake/static/css/main.073cf3a9.chunk.css",
+    "main.js": "/lake/static/js/main.f5bf4e14.chunk.js",
+    "main.js.map": "/lake/static/js/main.f5bf4e14.chunk.js.map",
     "runtime-main.js": "/lake/static/js/runtime-main.b809e5c1.js",
     "runtime-main.js.map": "/lake/static/js/runtime-main.b809e5c1.js.map",
-    "static/js/2.29f27868.chunk.js": "/lake/static/js/2.29f27868.chunk.js",
-    "static/js/2.29f27868.chunk.js.map": "/lake/static/js/2.29f27868.chunk.js.map",
+    "static/js/2.23ddfda3.chunk.js": "/lake/static/js/2.23ddfda3.chunk.js",
+    "static/js/2.23ddfda3.chunk.js.map": "/lake/static/js/2.23ddfda3.chunk.js.map",
     "index.html": "/lake/index.html",
-    "static/css/main.bbf7fbba.chunk.css.map": "/lake/static/css/main.bbf7fbba.chunk.css.map",
-    "static/js/2.29f27868.chunk.js.LICENSE.txt": "/lake/static/js/2.29f27868.chunk.js.LICENSE.txt",
-    "static/media/Styles.css": "/lake/static/media/ice4.4c59d133.jpeg"
+    "static/css/main.073cf3a9.chunk.css.map": "/lake/static/css/main.073cf3a9.chunk.css.map",
+    "static/js/2.23ddfda3.chunk.js.LICENSE.txt": "/lake/static/js/2.23ddfda3.chunk.js.LICENSE.txt",
+    "static/media/Styles.css": "/lake/static/media/villa.83c5239c.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.b809e5c1.js",
-    "static/js/2.29f27868.chunk.js",
-    "static/css/main.bbf7fbba.chunk.css",
-    "static/js/main.f954fa3d.chunk.js"
+    "static/js/2.23ddfda3.chunk.js",
+    "static/css/main.073cf3a9.chunk.css",
+    "static/js/main.f5bf4e14.chunk.js"
   ]
 }
