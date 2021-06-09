@@ -39,14 +39,20 @@ function Navbar() {
                 <div className='right'>
                     <div className='links'>
                         <input className='searchInput' placeholder='Search...'></input>
-                        <a className='link' href='/#'><Badge badgeContent={itemCount} color='primary'><ShoppingCartIcon onClick={increaseItemCount} style={{ color: 'white'}}/></Badge></a>
+                        <a className='link' href='/#'>
+                            <Badge badgeContent={itemCount} color='primary'>
+                                <ShoppingCartIcon onClick={increaseItemCount} style={{ color: 'white' }} />
+                            </Badge>
+                        </a>
                         <a className='link' href='/#'><AccountBoxSharpIcon style={{ color: 'white' }} /></a>
                     </div>
                 </div>
             </div>
             {/*Second part of nav-bar*/}
             <div className='categories'>
-                <Button onClick={changeState} className='mButton' disableRipple={true}><MenuSharp style={{ color: 'white', fontSize: '30px' }} /></Button>
+                <Button onClick={changeState} className='mButton' disableRipple={true}>
+                    <MenuSharp style={{ color: 'white', fontSize: '30px' }} />
+                </Button>
                 <div className='category'>
                     {/*Lisää tähän jotain jos haluat*/}
                 </div>
