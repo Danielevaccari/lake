@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '@material-ui/core/Card';
 import { CardActions, CardContent, CardMedia, IconButton, makeStyles, Typography } from '@material-ui/core';
 import { AddShoppingCart } from '@material-ui/icons';
+import increaseItemCount from './../Navbar'
 
 const useStyles = makeStyles({
     productView: {
@@ -9,7 +10,8 @@ const useStyles = makeStyles({
     },
     img: {
         height: '180px',
-        padding: '20%'
+        padding: '20%',
+        backgroundSize: 'auto'
     },
     cardActions: {
         display: 'flex',
@@ -24,7 +26,6 @@ const useStyles = makeStyles({
 const Product = ({ product }) => {
 
     const classes = useStyles()
-
 
     return (
         <Card className={classes.productView}>
