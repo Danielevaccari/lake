@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     }
 })
 
-const Products = ({ products }) => {
+const Products = ({ products, handleAddToCart }) => {
 
     const classes = useStyles()
 
@@ -24,7 +24,7 @@ const Products = ({ products }) => {
             <Grid container justify="center" spacing={4}>
                 {products && products.map((product) => (
                     <Grid key={product.id} item xs={12} sm={6} md={4} lg={3}>
-                        <Product product={product} />
+                        <Product product={product} handleAddToCart={handleAddToCart}/>
                     </Grid>
                 ))}
             </Grid>

@@ -2,7 +2,6 @@ import React from 'react'
 import Card from '@material-ui/core/Card';
 import { CardActions, CardContent, CardMedia, IconButton, makeStyles, Typography } from '@material-ui/core';
 import { AddShoppingCart } from '@material-ui/icons';
-import increaseItemCount from './../Navbar'
 
 const useStyles = makeStyles({
     productView: {
@@ -23,7 +22,7 @@ const useStyles = makeStyles({
     },
 })
 
-const Product = ({ product }) => {
+const Product = ({ product, handleAddToCart }) => {
 
     const classes = useStyles()
 
@@ -43,7 +42,7 @@ const Product = ({ product }) => {
                 <Typography dangerouslySetInnerHTML={{ __html: product.description }} />
             </CardContent>
             <CardActions className={classes.cardActions} disableSpacing>
-                <IconButton arial-abel='Add to cart'>
+                <IconButton arial-abel='Add to cart' onClick={() => handleAddToCart(product.id, 1)}>
                     <AddShoppingCart />
                 </IconButton>
             </CardActions>

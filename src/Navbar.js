@@ -6,27 +6,22 @@ import AccountBoxSharpIcon from '@material-ui/icons/AccountBoxSharp';
 import MenuSharp from '@material-ui/icons/MenuSharp';
 import PhotoAlbumIcon from '@material-ui/icons/PhotoAlbum';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import { red } from '@material-ui/core/colors';
+import {Link} from 'react-router-dom'
 
 const useStyles = makeStyles({
     listI: {
-        width: 300,
-        background: red
+        width: 300
     }
 })
 
-function Navbar() {
+function Navbar({ totalItems }) {
 
     const classes = useStyles()
 
     const [state, setState] = useState(false)
-    const [itemCount, setItemCount] = useState(0)
 
     const changeState = () => {
         setState(prevState => !prevState)
-    }
-    const increaseItemCount = () => {
-        setItemCount(prevItemCount => prevItemCount + 1)
     }
 
     return (
@@ -39,11 +34,11 @@ function Navbar() {
                 <div className='right'>
                     <div className='links'>
                         <input className='searchInput' placeholder='Search...'></input>
-                        <a className='link' href='/#'>
-                            <Badge badgeContent={itemCount} color='primary'>
-                                <ShoppingCartIcon onClick={increaseItemCount} style={{ color: 'white' }} />
+                        <div className='link'>
+                            <Badge badgeContent={totalItems} color='primary'>
+                                <ShoppingCartIcon component={Link} to='/cart' style={{ color: 'white' }} />
                             </Badge>
-                        </a>
+                        </div>
                         <a className='link' href='/#'><AccountBoxSharpIcon style={{ color: 'white' }} /></a>
                     </div>
                 </div>
