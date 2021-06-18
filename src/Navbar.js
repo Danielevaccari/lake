@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
-import { List, ListItem, ListItemText, makeStyles, Badge } from '@material-ui/core';
+import { List, ListItem, ListItemText, makeStyles, Badge, Typography } from '@material-ui/core';
 import AccountBoxSharpIcon from '@material-ui/icons/AccountBoxSharp';
 import MenuSharp from '@material-ui/icons/MenuSharp';
 import PhotoAlbumIcon from '@material-ui/icons/PhotoAlbum';
@@ -27,16 +27,16 @@ function Navbar({ totalItems }) {
     return (
         <>
             <div className='nav'>
-                <div className='left'>
+                <Typography component={Link} to='/' className='left'>
                     Clothing INC
-                </div>
+                </Typography>
 
                 <div className='right'>
                     <div className='links'>
                         <input className='searchInput' placeholder='Search...'></input>
                         <div className='link'>
                             <Badge badgeContent={totalItems} color='primary'>
-                                <ShoppingCartIcon component={Link} to='/cart' style={{ color: 'white' }} />
+                                <ShoppingCartIcon component={Link} to='/cart' style={{ color: 'grey' }} />
                             </Badge>
                         </div>
                         <a className='link' href='/#'><AccountBoxSharpIcon style={{ color: 'white' }} /></a>

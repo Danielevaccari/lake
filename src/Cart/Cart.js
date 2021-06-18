@@ -48,7 +48,7 @@ const Cart = ({ cart, handleEmptyCart, handleRemoveFromCart, handleUpdateQuantit
 
     const EmptyCart = () => (
         <Typography>
-            You have no items in your cart
+            You have no items in your cart, Start Adding !
         </Typography>
     )
 
@@ -58,7 +58,7 @@ const Cart = ({ cart, handleEmptyCart, handleRemoveFromCart, handleUpdateQuantit
             <Button component={Link} to='/' style={{ height: '50px' }}>go back</Button>
             <Grid className={classes.productList} container spacing={2}>
                 {cart.line_items && cart.line_items.map((item) => (
-                    <Grid className={classes.singleProductGrid} xs={12} sm={4} key={item.id}>
+                    <Grid item className={classes.singleProductGrid} xs={12} sm={4} key={item.id}>
                         <CartItem item={item} handleRemoveFromCart={handleRemoveFromCart} handleUpdateQuantity={handleUpdateQuantity} />
                     </Grid>
                 ))}
@@ -75,7 +75,7 @@ const Cart = ({ cart, handleEmptyCart, handleRemoveFromCart, handleUpdateQuantit
                         Clear cart
                     </Button>
 
-                    <Button disableRipple={true} variant='contained'>
+                    <Button component={Link} to='/checkout' disableRipple={true} variant='contained'>
                         Checkout
                     </Button>
                 </div>

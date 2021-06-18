@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Product from './Product'
 
+
 const useStyles = makeStyles({
     content: {
         
@@ -18,6 +19,10 @@ const useStyles = makeStyles({
 const Products = ({ products, handleAddToCart }) => {
 
     const classes = useStyles()
+
+     /*if (products.line_items < 1) {
+        return (<div className={classes.cartLoad}>{<HourglassEmptyIcon className={classes.cartLoadIcon} />}</div>)
+    }*/
 
     return (
         <div className={classes.content}>
