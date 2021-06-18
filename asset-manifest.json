@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/lake/static/css/main.4eaae9b1.chunk.css",
-    "main.js": "/lake/static/js/main.e4d28957.chunk.js",
-    "main.js.map": "/lake/static/js/main.e4d28957.chunk.js.map",
+    "main.css": "/lake/static/css/main.d92b419d.chunk.css",
+    "main.js": "/lake/static/js/main.4032cec9.chunk.js",
+    "main.js.map": "/lake/static/js/main.4032cec9.chunk.js.map",
     "runtime-main.js": "/lake/static/js/runtime-main.b809e5c1.js",
     "runtime-main.js.map": "/lake/static/js/runtime-main.b809e5c1.js.map",
     "static/js/2.c1a7119a.chunk.js": "/lake/static/js/2.c1a7119a.chunk.js",
     "static/js/2.c1a7119a.chunk.js.map": "/lake/static/js/2.c1a7119a.chunk.js.map",
     "index.html": "/lake/index.html",
-    "static/css/main.4eaae9b1.chunk.css.map": "/lake/static/css/main.4eaae9b1.chunk.css.map",
+    "static/css/main.d92b419d.chunk.css.map": "/lake/static/css/main.d92b419d.chunk.css.map",
     "static/js/2.c1a7119a.chunk.js.LICENSE.txt": "/lake/static/js/2.c1a7119a.chunk.js.LICENSE.txt",
     "static/media/Styles.css": "/lake/static/media/villa.83c5239c.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.b809e5c1.js",
     "static/js/2.c1a7119a.chunk.js",
-    "static/css/main.4eaae9b1.chunk.css",
-    "static/js/main.e4d28957.chunk.js"
+    "static/css/main.d92b419d.chunk.css",
+    "static/js/main.4032cec9.chunk.js"
   ]
 }
