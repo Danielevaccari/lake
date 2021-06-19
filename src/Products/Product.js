@@ -27,7 +27,7 @@ const Product = ({ product, handleAddToCart }) => {
     const classes = useStyles()
 
     return (
-        <Card className={classes.productView}>
+        <Card elevation={10} className={classes.productView}>
             <CardMedia className={classes.img} image={product.media.source} />
             <CardContent>
                 <div className={classes.cardContent}>

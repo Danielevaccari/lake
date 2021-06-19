@@ -6,7 +6,7 @@ import AccountBoxSharpIcon from '@material-ui/icons/AccountBoxSharp';
 import MenuSharp from '@material-ui/icons/MenuSharp';
 import PhotoAlbumIcon from '@material-ui/icons/PhotoAlbum';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles({
     listI: {
@@ -27,26 +27,36 @@ function Navbar({ totalItems }) {
     return (
         <>
             <div className='nav'>
-                <Typography component={Link} to='/' className='left'>
-                    Clothing INC
-                </Typography>
+                <div className='left'>
+                    <div className='leftLeft'>
+                        <Typography component={Link} to='/' >
+                            <div style={{ fontSize: '3vw' }} className='left'>
+                                Clothing INC
+                            </div>
+                        </Typography>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
 
                 <div className='right'>
-                    <div className='links'>
+                    <div className='rightLeft'>
                         <input className='searchInput' placeholder='Search...'></input>
-                        <div className='link'>
-                            <Badge badgeContent={totalItems} color='primary'>
-                                <ShoppingCartIcon component={Link} to='/cart' style={{ color: 'grey' }} />
-                            </Badge>
-                        </div>
-                        <a className='link' href='/#'><AccountBoxSharpIcon style={{ color: 'white' }} /></a>
+                    </div>
+
+                    <div className='rightRight'>
+                        <Badge component={Link} to='/cart' badgeContent={totalItems} color='primary'>
+                            <ShoppingCartIcon style={{ color: 'black' }} />
+                        </Badge>
+                        <a className='link' href='/#'><AccountBoxSharpIcon style={{ color: 'black' }} /></a>
                     </div>
                 </div>
             </div>
             {/*Second part of nav-bar*/}
-            <div className='categories'>
+            <div className='nav2'>
                 <Button onClick={changeState} className='mButton' disableRipple={true}>
-                    <MenuSharp style={{ color: 'white', fontSize: '30px' }} />
+                    <MenuSharp style={{ color: 'black', fontSize: '30px' }} />
                 </Button>
                 <div className='category'>
                     {/*Lisää tähän jotain jos haluat*/}
@@ -60,7 +70,7 @@ function Navbar({ totalItems }) {
                             <ListItem divider disableRipple={true} button>
                                 <ListItemText>
                                     something
-                            </ListItemText>
+                                </ListItemText>
                             </ListItem>
 
                             <ListItem divider disableRipple={true} button>
@@ -73,7 +83,7 @@ function Navbar({ totalItems }) {
                             <ListItem divider disableRipple={true} button>
                                 <ListItemText>
                                     About us
-                            </ListItemText>
+                                </ListItemText>
                             </ListItem>
                         </List>
                     </div>

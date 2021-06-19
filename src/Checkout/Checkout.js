@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react'
-import { Paper, Stepper, Step, StepLabel, Typography, Divider, Button, makeStyles, CircularProgress } from '@material-ui/core'
+import { Paper, Stepper, Step, StepLabel, Typography, Divider, Button, makeStyles, CircularProgress} from '@material-ui/core'
 import AddressForm from './AddressForm'
 import PaymentForm from './PaymentForm'
 import { commerce } from '../library/commerce'
@@ -8,7 +8,8 @@ import { Link, useHistory } from 'react-router-dom'
 const useStyles = makeStyles({
     CheckoutPaper: {
         padding: '5%',
-        width: '50%'
+        width: '75%',
+        
     }
 })
 
@@ -36,7 +37,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
                 }
             }
             generateToken()
-        }
+        }// eslint-disable-next-line
     }, [cart])
 
     const nextStep = () => setActiveStep(prevActiveStep => prevActiveStep + 1)
@@ -75,10 +76,11 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
 
     return (
         <>
-            <main style={{ display: 'flex', justifyContent: 'center', height: '100vh', alignItems: 'center' }}>
+        <div style={{height: '20px'}}></div>
+            <main style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <Paper className={classes.CheckoutPaper}>
                     <Typography variant='h4'>Checkout</Typography>
-                    <Stepper activeStep={activeStep}>{steps.map((step) => (
+                    <Stepper  activeStep={activeStep}>{steps.map((step) => (
                         <Step key={step}>
                             <StepLabel>{step}</StepLabel>
                         </Step>

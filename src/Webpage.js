@@ -47,7 +47,7 @@ function Webpage() {
             setOrder(incomingOrder)
             refresCart()
         } catch (error) {
-            
+            setErrorMessage(error.data.error.message);
         }
     }
     useEffect(() => {
@@ -61,22 +61,18 @@ function Webpage() {
                 <Switch>
 
                     <Route exact path='/'>
-                        <div className='web1'>
-                            <Navbar totalItems={cart.total_items} />
-                        </div>
+                        <Navbar totalItems={cart.total_items} />
                         <Products products={products} handleAddToCart={handleAddToCart} />
                     </Route>
 
                     <Route exact path='/cart'>
                         <Navbar totalItems={cart.total_items} />
-                        <div className='web2'>
-
-                            <Cart cart={cart}
-                                handleEmptyCart={handleEmptyCart}
-                                handleRemoveFromCart={handleRemoveFromCart}
-                                handleUpdateQuantity={handleUpdateQuantity} />
-                        </div>
+                        <Cart cart={cart}
+                            handleEmptyCart={handleEmptyCart}
+                            handleRemoveFromCart={handleRemoveFromCart}
+                            handleUpdateQuantity={handleUpdateQuantity} />
                     </Route>
+
                     <Route exact path='/checkout'>
                         <Navbar totalItems={cart.total_items} />
                         <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />

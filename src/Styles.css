@@ -1,6 +1,6 @@
 .root {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 .divC {
@@ -55,8 +55,6 @@
 .web1 {
     height          : 100vh;
     width           : 100vw;
-    background-image: url(./images/villa.jpeg);
-    background-size : 100vw 100vh;
 }
 
 .web2 {
