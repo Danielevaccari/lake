@@ -7,8 +7,8 @@ import Product from './Product'
 const useStyles = makeStyles({
     content: {
         
-        backgroundColor: 'rgb(122,34,80)',
-        padding: '5%',
+        backgroundColor: 'grey',
+        padding: '15%',
         height: '100%'
     },
     root: {
@@ -26,9 +26,9 @@ const Products = ({ products, handleAddToCart }) => {
 
     return (
         <div className={classes.content}>
-            <Grid container justify="center" spacing={4}>
+            <Grid container justify="center" spacing={5}>
                 {products && products.map((product) => (
-                    <Grid key={product.id} item xs={12} sm={6} md={4} lg={3}>
+                    <Grid key={product.id} item xs={12} sm={6} lg={4}>
                         <Product product={product} handleAddToCart={handleAddToCart}/>
                     </Grid>
                 ))}
