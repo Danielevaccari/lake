@@ -69,7 +69,7 @@ body {
     height      : 30px;
     width       : 100%;
     background  : rgb(2, 0, 36);
-    background  : linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(148, 147, 147, 1) 37%, rgba(0, 212, 255, 1) 200%);
+    background  : linear-gradient(90deg, rgb(72, 55, 136) 0%, rgba(148, 147, 147, 1) 37%, rgba(0, 212, 255, 1) 200%);
 }
 
 .category {

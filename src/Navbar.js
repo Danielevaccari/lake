@@ -29,7 +29,7 @@ function Navbar({ totalItems }) {
             <div className='nav'>
                 <div className='left'>
                     <div className='leftLeft'>
-                        <Typography component={Link} to='/' >
+                        <Typography style={{ textDecoration: 'none' }} component={Link} to='/' >
                             <div style={{ fontSize: '3vw' }} className='left'>
                                 Clothing INC
                             </div>
@@ -49,7 +49,7 @@ function Navbar({ totalItems }) {
                         <Badge component={Link} to='/cart' badgeContent={totalItems} color='primary'>
                             <ShoppingCartIcon style={{ color: 'black' }} />
                         </Badge>
-                        <a className='link' href='/#'><AccountBoxSharpIcon style={{ color: 'black' }} /></a>
+                        <AccountBoxSharpIcon component={Link} to='/profile' style={{ color: 'black' }} />
                     </div>
                 </div>
             </div>
@@ -67,22 +67,10 @@ function Navbar({ totalItems }) {
                 <Drawer anchor={'left'} open={state} onClose={changeState}>
                     <div onClick={changeState}>
                         <List className={classes.listI}>
-                            <ListItem divider disableRipple={true} button>
-                                <ListItemText>
-                                    something
-                                </ListItemText>
-                            </ListItem>
-
-                            <ListItem divider disableRipple={true} button>
+                            <ListItem component={Link} to='/lookbook' divider disableRipple={true} button>
                                 <PhotoAlbumIcon />
                                 <ListItemText>
                                     <div>Lookbook</div>
-                                </ListItemText>
-                            </ListItem>
-
-                            <ListItem divider disableRipple={true} button>
-                                <ListItemText>
-                                    About us
                                 </ListItemText>
                             </ListItem>
                         </List>

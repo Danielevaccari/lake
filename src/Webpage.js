@@ -5,6 +5,7 @@ import Cart from './Cart/Cart'
 import { commerce } from './library/commerce'
 import { Switch, Route, HashRouter } from 'react-router-dom'
 import Checkout from './Checkout/Checkout'
+import Lookbook from './Lookbook/Lookbook'
 
 function Webpage() {
 
@@ -76,6 +77,11 @@ function Webpage() {
                     <Route exact path='/checkout'>
                         <Navbar totalItems={cart.total_items} />
                         <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
+                    </Route>
+
+                    <Route exact path='/lookbook'>
+                        <Navbar />
+                        <Lookbook products={products}/>
                     </Route>
 
                 </Switch>
