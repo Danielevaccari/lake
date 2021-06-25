@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react'
-import { Paper, Stepper, Step, StepLabel, Typography, Divider, Button, makeStyles, CircularProgress} from '@material-ui/core'
+import { Paper, Stepper, Step, StepLabel, Typography, Divider, Button, makeStyles, CircularProgress } from '@material-ui/core'
 import AddressForm from './AddressForm'
 import PaymentForm from './PaymentForm'
 import { commerce } from '../library/commerce'
@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     CheckoutPaper: {
         padding: '5%',
         width: '75%',
-        
+        marginBottom: '5%'
     }
 })
 
@@ -76,11 +76,11 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
 
     return (
         <>
-        <div style={{height: '20px'}}></div>
-            <main style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div style={{ height: '20px', backgroundColor: 'rgb(192, 191, 191)' }}></div>
+            <main style={{minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgb(192, 191, 191)' }}>
                 <Paper className={classes.CheckoutPaper}>
                     <Typography variant='h4'>Checkout</Typography>
-                    <Stepper  activeStep={activeStep}>{steps.map((step) => (
+                    <Stepper activeStep={activeStep}>{steps.map((step) => (
                         <Step key={step}>
                             <StepLabel>{step}</StepLabel>
                         </Step>

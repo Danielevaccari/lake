@@ -8,6 +8,7 @@ const useStyles = makeStyles({
     },
     cardClass: {
         height: '330px',
+        borderRadius: '0'
     },
     cartItemButtons: {
         display: 'flex',
