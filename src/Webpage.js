@@ -6,6 +6,9 @@ import { commerce } from './library/commerce'
 import { Switch, Route, HashRouter } from 'react-router-dom'
 import Checkout from './Checkout/Checkout'
 import Lookbook from './Lookbook/Lookbook'
+import WebsiteBackground from './Background/WebsiteBackground'
+import './Background/Background.css'
+
 
 function Webpage() {
 
@@ -63,6 +66,7 @@ function Webpage() {
 
                     <Route exact path='/'>
                         <Navbar totalItems={cart.total_items} />
+                        <WebsiteBackground />
                         <Products products={products} handleAddToCart={handleAddToCart} />
                     </Route>
 
@@ -81,7 +85,7 @@ function Webpage() {
 
                     <Route exact path='/lookbook'>
                         <Navbar />
-                        <Lookbook products={products}/>
+                        <Lookbook products={products} />
                     </Route>
 
                 </Switch>

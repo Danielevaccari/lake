@@ -1,0 +1,100 @@
+.surroundings {
+    min-height      : 65vh;
+    width           : 100vw;
+    background-color: rgb(192, 191, 191);
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+.hover {
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.real {
+    position       : absolute;
+    font-size      : 9vw;
+    font-family    : Arial, Helvetica, sans-serif;
+    display        : flex;
+    justify-content: center;
+    color          : transparent;
+    align-items    : center;
+    transform      : skewY(-9deg);
+    text-shadow    :
+
+        1px -1px 10px rgba(255, 255, 255, 0.4),
+        0px -1px 10px rgba(255, 255, 255, 0.4),
+        -1px -1px 10px rgba(255, 255, 255, 0.4),
+        0px -2px 3px #fff,
+        -1px -2px 3px #fff,
+        -2px -2px 3px #fff,
+        -1px -3px 2px #ddd,
+        -2px -3px 2px #ddd,
+        -3px -3px 2px #ddd,
+        -2px -4px 2px #fff,
+        -3px -4px 2px #fff,
+        -4px -4px 2px #fff,
+        -3px -5px 1px #fff,
+        -4px -5px 1px #fff,
+        -5px -5px 1px #fff,
+
+
+        0px -2px 3px #fff,
+        -1px -2px 3px #fff,
+        -2px -2px 3px #fff,
+        -1px -3px 2px #ddd,
+        -2px -3px 2px #ddd,
+        -3px -3px 2px #ddd,
+        -2px -4px 2px #fff,
+        -3px -4px 2px #fff,
+        -4px -4px 2px #fff,
+        -3px -5px 1px #fff,
+        -4px -5px 1px #fff,
+        -5px -5px 1px #fff,
+
+        0px -2px 3px #fff,
+        -1px -2px 3px #fff,
+        -2px -2px 3px #fff,
+        -1px -3px 2px #ddd,
+        -2px -3px 2px #ddd,
+        -3px -3px 2px #ddd,
+        -2px -4px 2px #fff,
+        -3px -4px 2px #fff,
+        -4px -4px 2px #fff,
+        -3px -5px 1px #fff,
+        -4px -5px 1px #fff,
+        -5px -5px 1px #fff,
+
+        0px -2px 3px #fff,
+        -1px -2px 3px #fff,
+        -2px -2px 3px #fff,
+        -1px -3px 2px #ddd,
+        -2px -3px 2px #ddd,
+        -3px -3px 2px #ddd,
+        -2px -4px 2px #fff,
+        -3px -4px 2px #fff,
+        -4px -4px 2px #fff,
+        -3px -5px 1px #fff,
+        -4px -5px 1px #fff,
+        -5px -5px 1px #fff;
+}
+
+.real2 {}
+
+.real::before {
+    position        : absolute;
+    content         : "Clothing INC™";
+    transform       : skewX(40deg);
+    transform-origin: bottom left;
+    z-index         : -1;
+    color           : transparent;
+    text-shadow     :
+        15px 0px 20px rgba(0, 0, 0, 0.25),
+        15px 0px 25px rgba(0, 0, 0, 0.2),
+        15px 0px 35px rgba(0, 0, 0, 0.15),
+        15px 0px 45px rgba(0, 0, 0, 0.1);
+
+}

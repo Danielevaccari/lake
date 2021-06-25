@@ -7,7 +7,7 @@ import Product from './Product'
 const useStyles = makeStyles({
     content: {
         
-        backgroundColor: 'grey',
+        backgroundColor: 'rgb(192, 191, 191)',
         padding: '15%',
         height: '100%'
     },

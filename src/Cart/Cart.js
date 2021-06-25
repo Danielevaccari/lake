@@ -85,7 +85,7 @@ const Cart = ({ cart, handleEmptyCart, handleRemoveFromCart, handleUpdateQuantit
     }
 
     return (
-        <div>
+        <div style={{backgroundColor: 'rgb(192, 191, 191)', minHeight: '100vh'}}>
             <Container>
                 <Typography variant='h4'>
                     Cart

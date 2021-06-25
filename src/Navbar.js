@@ -29,9 +29,9 @@ function Navbar({ totalItems }) {
             <div className='nav'>
                 <div className='left'>
                     <div className='leftLeft'>
-                        <Typography style={{ textDecoration: 'none' }} component={Link} to='/' >
-                            <div style={{ fontSize: '3vw' }} className='left'>
-                                Clothing INC
+                        <Typography style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }} component={Link} to='/' >
+                            <div className='left'>
+                                Clothing INC™
                             </div>
                         </Typography>
                     </div>
@@ -49,7 +49,7 @@ function Navbar({ totalItems }) {
                         <Badge component={Link} to='/cart' badgeContent={totalItems} color='primary'>
                             <ShoppingCartIcon style={{ color: 'black' }} />
                         </Badge>
-                        <AccountBoxSharpIcon component={Link} to='/profile' style={{ color: 'black' }} />
+                        <AccountBoxSharpIcon style={{ color: 'black' }} />
                     </div>
                 </div>
             </div>

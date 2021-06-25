@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
 
 body {
-    margin : 0;
-    padding: 0;
+    margin      : 0;
+    padding     : 0;
+    margin-right: 0;
 }
 
 .nav {
@@ -21,8 +26,9 @@ body {
 }
 
 .left {
+    height         : 100%;
     padding-left   : 16px;
-    font-size      : 7vw;
+    font-size      : 3vw;
     font-family    : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display        : flex;
     flex           : 50%;
@@ -31,9 +37,91 @@ body {
     text-decoration: none;
 }
 
+.realNav {
+    padding-left: 16px;
+    font-size   : 3vw;
+    font-family : Arial, Helvetica, sans-serif;
+    align-items : center;
+    position    : absolute;
+    color       : black;
+    text-shadow :
+
+        1px -1px 10px rgba(255, 255, 255, 0.4),
+        0px -1px 10px rgba(255, 255, 255, 0.4),
+        -1px -1px 10px rgba(255, 255, 255, 0.4),
+        0px -2px 3px	#696969,
+        -1px -2px 3px	#696969,
+        -2px -2px 3px	#696969,
+        -1px -3px 2px	#696969,
+        -2px -3px 2px	#696969,
+        -3px -3px 2px	#696969,
+        -2px -4px 2px	#696969,
+        -3px -4px 2px	#696969,
+        -4px -4px 2px	#696969,
+        -3px -5px 1px	#696969,
+        -4px -5px 1px	#696969,
+        -5px -5px 1px	#696969,
+
+
+        0px -2px 3px	#696969,
+        -1px -2px 3px	#696969,
+        -2px -2px 3px	#696969,
+        -1px -3px 2px	#696969,
+        -2px -3px 2px	#696969,
+        -3px -3px 2px	#696969,
+        -2px -4px 2px	#696969,
+        -3px -4px 2px	#696969,
+        -4px -4px 2px	#696969,
+        -3px -5px 1px	#696969,
+        -4px -5px 1px	#696969,
+        -5px -5px 1px	#696969,
+
+        0px -2px 3px #696969,
+        -1px -2px 3px #696969,
+        -2px -2px 3px #696969,
+        -1px -3px 2px #ddd,
+        -2px -3px 2px #ddd,
+        -3px -3px 2px #ddd,
+        -2px -4px 2px #696969,
+        -3px -4px 2px #696969,
+        -4px -4px 2px #696969,
+        -3px -5px 1px #696969,
+        -4px -5px 1px #696969,
+        -5px -5px 1px #696969,
+
+        0px -2px 3px #696969,
+        -1px -2px 3px #696969,
+        -2px -2px 3px #696969,
+        -1px -3px 2px #ddd,
+        -2px -3px 2px #ddd,
+        -3px -3px 2px #ddd,
+        -2px -4px 2px #696969,
+        -3px -4px 2px #696969,
+        -4px -4px 2px #696969,
+        -3px -5px 1px #696969,
+        -4px -5px 1px #696969,
+        -5px -5px 1px #696969;
+}
+
+.realNav::before {
+    position        : absolute;
+    content         : "Clothing INC™";
+    transform       : skewX(40deg);
+    transform-origin: bottom left;
+    z-index         : -1;
+    color           : transparent;
+    text-shadow     :
+        15px 0px 20px rgba(0, 0, 0, 0.25),
+        15px 0px 25px rgba(0, 0, 0, 0.2),
+        15px 0px 35px rgba(0, 0, 0, 0.15),
+        15px 0px 45px rgba(0, 0, 0, 0.1);
+
+}
+
 .leftLeft {
-    display: flex;
-    flex   : 30%;
+    height     : 100%;
+    display    : flex;
+    flex       : 30%;
 }
 
 .leftRight {
@@ -68,8 +156,7 @@ body {
     padding-left: 12px;
     height      : 30px;
     width       : 100%;
-    background  : rgb(2, 0, 36);
-    background  : linear-gradient(90deg, rgb(72, 55, 136) 0%, rgba(148, 147, 147, 1) 37%, rgba(0, 212, 255, 1) 200%);
+    background  : gray;
 }
 
 .category {

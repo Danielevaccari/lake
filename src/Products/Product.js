@@ -5,10 +5,11 @@ import { AddShoppingCart } from '@material-ui/icons';
 
 const useStyles = makeStyles({
     productView: {
-        height: '100%'
+        height: '100%',
+        borderRadius: '0'
     },
     img: {
-        height: '180px',
+        height: '200px',
         padding: '20%',
         backgroundSize: 'auto'
     },
