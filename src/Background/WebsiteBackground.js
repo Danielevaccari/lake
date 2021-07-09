@@ -12,7 +12,6 @@ const WebsiteBackground = () => {
         setHovered(prevHovered => false)
     }
 
-
     return (
         <>
             <div className='surroundings'>
