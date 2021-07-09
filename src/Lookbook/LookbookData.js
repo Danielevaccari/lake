@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardMedia, makeStyles } from '@material-ui/core'
+import { Card, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
     Cmedia: {
