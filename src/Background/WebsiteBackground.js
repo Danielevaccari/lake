@@ -11,9 +11,7 @@ const WebsiteBackground = () => {
     const falseHover = () => {
         setHovered(prevHovered => false)
     }
-    useEffect(() => {
-        console.log(hovered)
-    })
+
 
     return (
         <>
