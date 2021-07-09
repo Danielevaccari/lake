@@ -82,11 +82,7 @@
         -5px -5px 1px #fff;
 }
 
-.real2 {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-}
+.real2 {}
 
 .real::before {
     position        : absolute;

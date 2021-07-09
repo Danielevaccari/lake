@@ -60,7 +60,7 @@ const PaymentForm = ({ checkoutToken, backStep, shippingData, onCaptureCheckout,
                 <ElementsConsumer>
                     {({ elements, stripe }) => (
                         <form onSubmit={(e) => handleSubmit(e, elements, stripe)}>
-                            <CardElement/>
+                            <CardElement />
                             <br /><br />
                             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                 <Button variant='outlined' onClick={backStep}>Back</Button>
